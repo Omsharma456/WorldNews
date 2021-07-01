@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/bbcNewsFragment">
+
+    <fragment
+        android:id="@+id/bbcNewsFragment"
+        android:name="com.omideveloper.worldnews.ui.bbc.HomeFragment"
+        android:label="@string/menu_bbc"
+        tools:layout="@layout/fragment_bbc">
+        <action
+            android:id="@+id/action_bbcNewsFragment_to_skyNewsFragment"
+            app:destination="@id/skyNewsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/aljazeeraNewsFragment"
+        android:name="com.omideveloper.worldnews.ui.aljazeera.GalleryFragment"
+        android:label="@string/menu_aljazera"
+        tools:layout="@layout/fragment_aljazeera" />
+
+    <fragment
+        android:id="@+id/cnnNewsFragment"
+        android:name="com.omideveloper.worldnews.ui.cnn.SlideshowFragment"
+        android:label="@string/menu_cnn"
+        tools:layout="@layout/fragment_cnn" />
+    <fragment
+        android:id="@+id/foxNewsFragment"
+        android:name="com.omideveloper.worldnews.Fragment.FoxNewsFragment"
+        android:label="@string/fox"
+        tools:layout="@layout/fragment_fox_news" />
+    <fragment
+        android:id="@+id/skyNewsFragment"
+        android:name="com.omideveloper.worldnews.Fragment.SkyNewsFragment"
+        android:label="@string/sky"
+        tools:layout="@layout/fragment_sky_news" />
+</navigation>
